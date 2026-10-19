@@ -149,7 +149,7 @@ def build(p):
 <body>
 <header><div class="wrap">
 <a class="logo" href="index.html">Labo <span>Ahlam</span></a>
-<nav><a href="index.html#services">الخدمات</a><a href="index.html#stars">المشاهير</a><a href="index.html#faq">أسئلة</a><a href="index.html#rdv">الحجز</a></nav>
+<nav><a href="index.html#services">الخدمات</a><a href="index.html#stars">المشاهير</a><a href="espace-dentistes.html">للأطباء</a><a href="index.html#faq">أسئلة</a><a href="index.html#rdv">الحجز</a></nav>
 </div></header>
 <main class="wrap">
 <p class="crumb"><a href="index.html">الرئيسية</a> ← <a href="index.html#services">الخدمات</a> ← {p['ar']}</p>

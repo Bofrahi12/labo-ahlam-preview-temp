@@ -357,6 +357,19 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 }
 </script>
 <style>.brand-poster{display:block;margin:20px auto 4px;width:min(330px,86vw);border-radius:18px;border:1px solid var(--line)}</style>
+<style>
+.pro-band{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:linear-gradient(150deg,#0d3054,#071c31);border:1px solid var(--line);border-radius:18px;padding:24px 26px}
+.ba-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px;margin-top:26px}
+.ba{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/3;background:#0a2438}
+.ba-side{position:absolute;inset:0}
+.ba-before{background:linear-gradient(140deg,#12395c,#0a2438)}
+.ba-after{background:linear-gradient(140deg,#1d6ea8,#0e4a6e);clip-path:inset(0 0 0 50%)}
+.ba-tag{position:absolute;top:12px;background:rgba(3,12,22,.6);padding:4px 14px;border-radius:999px;font-weight:800;font-size:14px}
+.ba-before .ba-tag{inset-inline-start:12px}.ba-after .ba-tag{inset-inline-end:12px}
+.ba-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:14.5px;padding:20px}
+.ba-line{position:absolute;top:0;bottom:0;width:3px;background:var(--pink);left:50%;transform:translateX(-50%);pointer-events:none}
+.ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+</style>
 </head>
 <body>
 <div id="loader"><div class="lg"><span style="font-family:'Marcellus',serif">LABO</span> <b>AHLAM</b> 🦷</div><div class="bar2"><i id="loadFill"></i></div><div class="micro">كنوجدو لك الابتسامة…</div></div>
@@ -367,7 +380,8 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     <a class="logo" href="#hero"><span>LABO</span> <b>AHLAM</b> 🦷</a>
     <nav class="chaps">
       <a href="#services" data-i="nav1">الخدمات</a>
-<a href="#stars">المشاهير</a><a href="#galerie" data-i="nav2">المعرض ثلاثي الأبعاد</a><a href="#process" data-i="nav3">كيفاش كنخدمو</a><a href="#reels" data-i="nav4">من إنستغرام</a><a href="#faq" data-i="nav5">أسئلة</a><a href="#rdv" data-i="nav6">الحجز</a>
+<a href="#stars">المشاهير</a>
+<a href="espace-dentistes.html">للأطباء</a><a href="#galerie" data-i="nav2">المعرض ثلاثي الأبعاد</a><a href="#process" data-i="nav3">كيفاش كنخدمو</a><a href="#reels" data-i="nav4">من إنستغرام</a><a href="#faq" data-i="nav5">أسئلة</a><a href="#rdv" data-i="nav6">الحجز</a>
     </nav>
     <button id="langBtn" type="button">FR</button>
     <a class="btn btn-wa" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86" target="_blank" rel="noopener">واتساب</a>
@@ -499,6 +513,18 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   </div>
 </section>
 
+<section style="padding:0 0 8px">
+  <div class="wrap">
+    <div class="pro-band rv">
+      <div>
+        <div class="eyebrow">Espace Dentistes · للأطباء</div>
+        <h2 style="font-size:24px;margin:4px 0 6px">أنت طبيب(ة) أسنان؟ صيفط حالاتك للمختبر في دقيقة</h2>
+        <p style="color:var(--mut);margin:0">استمارة طلب عمل منظمة كتوصل مباشرة لواتساب المختبر — نوع العمل، عدد الأسنان، الدرجة والملاحظات.</p>
+      </div>
+      <a class="btn btn-wa" href="espace-dentistes.html">فضاء الأطباء ←</a>
+    </div>
+  </div>
+</section>
 <section id="galerie">
   <div class="wrap">
     <div class="eyebrow">Galerie 3D · من المختبر</div>
@@ -516,6 +542,28 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   </div></div>
 </section>
 
+
+<section id="avant-apres">
+  <div class="wrap">
+    <div class="eyebrow">Avant / Après · قبل وبعد</div>
+    <h2 class="title rv">شوفي الفرق بعينيك — جرّي المؤشر</h2>
+    <p class="lede rv">حالات حقيقية من شغل المختبر، قبل وبعد. جرّي المؤشر فوق كل حالة باش تقارني النتيجة.</p>
+    <div class="ba-grid">
+      <div class="ba rv" data-ba>
+        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><span class="ba-ph">صورة «قبل» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><span class="ba-ph">صورة «بعد» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-line"></div>
+        <input type="range" min="0" max="100" value="50" aria-label="قارني قبل وبعد — حالة 1">
+      </div>
+      <div class="ba rv" data-ba>
+        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><span class="ba-ph">صورة «قبل» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><span class="ba-ph">صورة «بعد» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-line"></div>
+        <input type="range" min="0" max="100" value="50" aria-label="قارني قبل وبعد — حالة 2">
+      </div>
+    </div>
+  </div>
+</section>
 <section id="process" style="background:var(--bg2)">
   <div class="wrap">
     <div class="eyebrow">Le parcours · المراحل</div>
@@ -749,5 +797,12 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 })();
 </script>
   
+<script>
+document.querySelectorAll('[data-ba]').forEach(function(box){
+  var after=box.querySelector('.ba-after'), line=box.querySelector('.ba-line'), inp=box.querySelector('input[type=range]');
+  function upd(){var v=+inp.value; after.style.clipPath='inset(0 0 0 '+v+'%)'; line.style.left=v+'%';}
+  inp.addEventListener('input', upd); upd();
+});
+</script>
 </body>
 </html>
