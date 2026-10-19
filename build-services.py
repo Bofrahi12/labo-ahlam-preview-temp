@@ -6,7 +6,7 @@ OUT = os.path.dirname(os.path.abspath(__file__))
 WA = "212609238630"
 
 CSS = """
-:root{--bg:#0d0a16;--bg2:#120c20;--panel:#181228;--line:#2b2145;--hair:rgba(233,225,255,.12);--txt:#f4f0ff;--mut:#b6aad4;--pink:#f0a6c8;--vio:#8b5cf6;--wa:#22c064}
+:root{--bg:#061626;--bg2:#081f36;--panel:#0d2a45;--line:#1e4266;--hair:rgba(190,225,255,.12);--txt:#eef7ff;--mut:#a9c6de;--pink:#56ccf2;--vio:#2f80ed;--wa:#22c064}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',Tahoma,Arial,sans-serif;line-height:1.8}
 .wrap{max-width:920px;margin:0 auto;padding:0 20px}
@@ -21,7 +21,7 @@ nav a:hover{color:var(--pink)}
 .eyebrow{color:var(--pink);font-size:14px;font-weight:700;letter-spacing:.4px;margin-top:14px}
 h1{font-size:31px;line-height:1.45;margin:6px 0 12px}
 h2{font-size:23px;margin:34px 0 12px}
-p,li{color:#ddd6f5;font-size:16.5px}
+p,li{color:#d7e9f7;font-size:16.5px}
 .lede{font-size:18px;color:var(--txt)}
 .hero-img{width:100%;border-radius:18px;border:1px solid var(--hair);margin:20px 0 6px;aspect-ratio:16/8;object-fit:cover}
 ul{padding-inline-start:22px}
@@ -34,7 +34,7 @@ ul{padding-inline-start:22px}
 details{background:var(--panel);border:1px solid var(--hair);border-radius:12px;padding:14px 18px;margin:10px 0}
 summary{cursor:pointer;font-weight:700}
 details p{margin-top:8px;color:var(--mut)}
-.cta{background:linear-gradient(150deg,#241640,#17102b);border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;margin:36px 0}
+.cta{background:linear-gradient(150deg,#0d3054,#071c31);border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center;margin:36px 0}
 .btn{display:inline-block;background:var(--wa);color:#fff;font-weight:800;text-decoration:none;padding:13px 26px;border-radius:999px;margin-top:12px}
 .others{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .others a{background:var(--panel);border:1px solid var(--hair);border-radius:12px;padding:14px 16px;color:var(--txt);text-decoration:none}
@@ -51,7 +51,7 @@ STEPS = [
  ("04", "التجربة والمتابعة", "كتجربي التركيبة وكنعدّلو عليها حتى تولي مريحة وطبيعية في فمك — والمتابعة كتبقى مفتوحة."),
 ]
 SHARED_FAQ = [
- ("كيفاش كنحجز موعد؟", "ببساطة: واتساب أو رسالة خاصة في إنستغرام. أوقات العمل: 10:00–13:00 و 15:00–19:00. صيفطي الخدمة اللي بغيتي وغادي تجاوبك بالتفاصيل."),
+ ("كيفاش كنحجز موعد؟", "ببساطة: واتساب أو رسالة خاصة في إنستغرام. أوقات العمل: 10:00–13:00 و 15:00–19:30. صيفطي الخدمة اللي بغيتي وغادي تجاوبك بالتفاصيل."),
  ("واش الأسعار ثابتة؟", "الثمن كيتحسب على حساب الحالة والنوع والمادة — داكشي علاش كنفضلو تجاوبك أحلام مباشرة من بعد ما تعرف حالتك، بلا أرقام عامة ما كتنطبقش على كلشي."),
 ]
 
@@ -139,7 +139,7 @@ def build(p):
 <link rel="canonical" href="https://laboahlam.com/{p['file']}">
 <meta property="og:title" content="{p['ar']} — Labo Ahlam, Tanger">
 <meta property="og:description" content="{p['meta']}">
-<meta property="og:image" content="https://laboahlam.com/labo/og-labo.jpg">
+<meta property="og:image" content="https://laboahlam.com/labo/brand-poster.jpg">
 <meta property="og:locale" content="ar_MA">
 <style>{CSS}</style>
 <script type="application/ld+json">
@@ -173,7 +173,7 @@ def build(p):
 </main>
 <footer><div class="wrap">
 Labo Ahlam — مختبر تركيبات الأسنان، طنجة · واتساب <a href="https://wa.me/{WA}">0609238630</a> · إنستغرام <a href="https://www.instagram.com/labo_ahlam" target="_blank" rel="noopener">@labo_ahlam</a><br>
-أوقات العمل: 10:00–13:00 و 15:00–19:00 · الأسعار حسب الحالة
+أوقات العمل: 10:00–13:00 و 15:00–19:30 · الأسعار حسب الحالة
 </div></footer>
 </body>
 </html>
