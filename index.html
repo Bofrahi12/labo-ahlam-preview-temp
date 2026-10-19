@@ -366,10 +366,12 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 .ba-after{background:linear-gradient(140deg,#1d6ea8,#0e4a6e);clip-path:inset(0 0 0 50%)}
 .ba-tag{position:absolute;top:12px;background:rgba(3,12,22,.6);padding:4px 14px;border-radius:999px;font-weight:800;font-size:14px}
 .ba-before .ba-tag{inset-inline-start:12px}.ba-after .ba-tag{inset-inline-end:12px}
+.ba-side img{width:100%;height:100%;object-fit:cover;display:block}
 .ba-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--mut);font-size:14.5px;padding:20px}
 .ba-line{position:absolute;top:0;bottom:0;width:3px;background:var(--pink);left:50%;transform:translateX(-50%);pointer-events:none}
 .ba input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
 </style>
+<style>.celeb .ph.ph-photo{width:118px;height:118px;border:none}</style>
 </head>
 <body>
 <div id="loader"><div class="lg"><span style="font-family:'Marcellus',serif">LABO</span> <b>AHLAM</b> 🦷</div><div class="bar2"><i id="loadFill"></i></div><div class="micro">كنوجدو لك الابتسامة…</div></div>
@@ -429,15 +431,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     <h2 class="title rv">ابتسامات معروفة… تصنعات هنا</h2>
     <p class="lede rv">وجوه معروفة وثقات في خدمة المختبر لابتسامتها — الصور والأسماء الأصلية ديالهم.</p>
     <div class="celeb-grid">
-      <article class="celeb rv" data-celeb="1"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p>
-        <a class="go" href="prothese-complete.html">صفحة الخدمة بالتفصيل ←</a>
-      
-        <a class="go" href="snap-on-smile.html">صفحة الخدمة بالتفصيل ←</a>
-      
-        <a class="go" href="gouttiere.html">صفحة الخدمة بالتفصيل ←</a>
-      
-        <a class="go" href="strass-dentaire.html">صفحة الخدمة بالتفصيل ←</a>
-      </article>
+      <article class="celeb rv" data-celeb="1"><div class="ph ph-photo"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية بعد علاج ابتسامتها عند Labo Ahlam" loading="lazy"></div><h3>برينسيسا الطنجاوية</h3><p>Snap-on Smile — ابتسامتها الجديدة بلا حفر وبلا ألم</p></article>
       <article class="celeb rv" data-celeb="2"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
       <article class="celeb rv" data-celeb="3"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
       <article class="celeb rv" data-celeb="4"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
@@ -550,14 +544,14 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     <p class="lede rv">حالات حقيقية من شغل المختبر، قبل وبعد. جرّي المؤشر فوق كل حالة باش تقارني النتيجة.</p>
     <div class="ba-grid">
       <div class="ba rv" data-ba>
-        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><span class="ba-ph">صورة «قبل» الحقيقية — من شغل أحلام</span></div>
-        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><span class="ba-ph">صورة «بعد» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><img src="labo/celeb-before.jpg" alt="قبل العلاج عند Labo Ahlam" loading="lazy"></div>
+        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><img src="labo/celeb-after.jpg" alt="بعد العلاج عند Labo Ahlam" loading="lazy"></div>
         <div class="ba-line"></div>
         <input type="range" min="0" max="100" value="50" aria-label="قارني قبل وبعد — حالة 1">
       </div>
       <div class="ba rv" data-ba>
-        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><span class="ba-ph">صورة «قبل» الحقيقية — من شغل أحلام</span></div>
-        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><span class="ba-ph">صورة «بعد» الحقيقية — من شغل أحلام</span></div>
+        <div class="ba-side ba-before"><span class="ba-tag">قبل</span><img src="labo/celeb-before-clinical.jpg" alt="قبل العلاج عند Labo Ahlam" loading="lazy"></div>
+        <div class="ba-side ba-after"><span class="ba-tag">بعد</span><img src="labo/celeb-after.jpg" alt="بعد العلاج عند Labo Ahlam" loading="lazy"></div>
         <div class="ba-line"></div>
         <input type="range" min="0" max="100" value="50" aria-label="قارني قبل وبعد — حالة 2">
       </div>
