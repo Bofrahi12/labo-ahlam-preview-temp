@@ -185,6 +185,31 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 .trustrow .tr i{font-style:normal;color:var(--vio2)}
 #langBtn{background:transparent;border:1px solid #3d6a96;color:var(--txt);border-radius:999px;padding:9px 16px;font-weight:800;font-family:inherit;cursor:pointer;font-size:13.5px}
 #langBtn:hover{border-color:var(--vio)}
+
+/* === DISTINCT UPGRADE 2026-10-20 === */
+::selection{background:#2f9be8;color:#fff}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#081c2e}
+::-webkit-scrollbar-thumb{background:#17557f;border-radius:99px}
+section{position:relative}
+.ghost{position:absolute;top:6px;inset-inline-start:1.5vw;font-family:'Marcellus',serif;font-size:clamp(80px,13vw,150px);line-height:1;color:transparent;-webkit-text-stroke:1.5px rgba(124,195,238,.13);pointer-events:none;user-select:none;z-index:0}
+section .wrap{position:relative;z-index:1}
+#loader .lg img{animation:lgpulse 1.15s ease-in-out infinite}
+@keyframes lgpulse{0%,100%{transform:scale(1);filter:drop-shadow(0 0 0 rgba(124,195,238,0))}50%{transform:scale(1.14);filter:drop-shadow(0 0 16px rgba(124,195,238,.85))}}
+.strip{overflow:hidden;background:linear-gradient(90deg,#0d3a59,#12507a,#0d3a59);border-block:1px solid rgba(124,195,238,.25);padding:13px 0;direction:ltr}
+.strip-track{display:flex;width:max-content;animation:stripmove 28s linear infinite}
+.strip-track span{padding:0 20px;font-weight:800;font-size:15px;color:#d8efff;white-space:nowrap;letter-spacing:.02em}
+@keyframes stripmove{to{transform:translateX(-50%)}}
+.svc-grid{display:flex;flex-direction:column;gap:22px;margin-top:44px}
+.svc{display:grid;grid-template-columns:1.08fr 1fr;align-items:stretch;position:relative}
+.svc .ph{min-height:250px}
+.svc .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.svc .bd{display:flex;flex-direction:column;justify-content:center;padding:28px 30px}
+.svc:nth-child(even) .ph{order:2}
+.svc::before{content:attr(data-n);position:absolute;top:12px;inset-inline-end:18px;font-family:'Marcellus',serif;font-size:74px;line-height:1;color:transparent;-webkit-text-stroke:1.2px rgba(140,200,245,.4);z-index:3;pointer-events:none}
+#baStage{box-shadow:0 34px 90px -22px rgba(47,155,232,.45),0 0 0 1px rgba(124,195,238,.18)}
+.foot-giant{font-family:'Marcellus',serif;font-size:clamp(58px,13.5vw,168px);line-height:.98;text-align:center;color:transparent;-webkit-text-stroke:1.5px rgba(124,195,238,.30);letter-spacing:.05em;padding:30px 0 2px;user-select:none;direction:ltr}
+@media(max-width:760px){.svc{grid-template-columns:1fr}.svc .ph{min-height:210px;order:0!important}.svc::before{font-size:56px}.ghost{font-size:84px}}
 </style>
 
 <style>
@@ -431,7 +456,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 
 
 
-<section id="stars">
+<div class="strip" aria-hidden="true"><div class="strip-track"><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span></div></div><section id="stars">
   <div class="wrap">
     <div class="eyebrow">واجهة المشاهير · Ils nous font confiance</div>
     <h2 class="title rv">ابتسامات معروفة… تصنعات هنا</h2>
@@ -453,48 +478,48 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   </div></div>
 </section>
 <section id="services">
-  <div class="wrap">
+  <span class="ghost" aria-hidden="true">٠١</span><div class="wrap">
     <div class="eyebrow">Nos services · خدماتنا</div>
     <h2 class="title rv" data-i="svcT">شنو كنصايبو في المختبر؟</h2>
     <p class="lede rv">كل خدمة مشروحة ببساطة — بلا مصطلحات معقدة. اختاري الخدمة ووصلي مباشرة لواتساب باش تسولي على التفاصيل والثمن على حساب حالتك.</p>
     <div class="svc-grid">
-      <article class="svc rv"><div class="ph"><img src="labo/svc-complete.jpg" alt="تركيبة أسنان كاملة حقيقية من إنتاج مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="01"><div class="ph"><img src="labo/svc-complete.jpg" alt="تركيبة أسنان كاملة حقيقية من إنتاج مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Prothèse complète</div><h3>التركيبة الكاملة</h3>
         <p>طقم كامل علوي وسفلي للناس اللي فقدو أسنانهم. كاينين أنواع وألوان مختلفة، والاختيار كيكون على حساب ذوقك وشكل وجهك — كيف ما كتشرح أحلام في فيديوهاتها.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%84%D8%A9">اسألي على هاد الخدمة ←</a></div></article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-flexible.jpg" alt="تركيبة أسنان مرنة من إنتاج مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="02"><div class="ph"><img src="labo/svc-flexible.jpg" alt="تركيبة أسنان مرنة من إنتاج مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Flexible · Silicone</div><h3>التركيبة الجزئية المرنة — سيليكون</h3>
         <p>تركيبة خفيفة ومرنة كتلبس مزيان بلا ما تضغط. أحلام كتشرح في فيديو خاص أنها مصممة تتحمل الاستعمال اليومي: الماكلة السخونة والقاصحة والمشروبات السخونة.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%85%D8%B1%D9%86%D8%A9%20%D8%B3%D9%8A%D9%84%D9%8A%D9%83%D9%88%D9%86">اسألي على هاد الخدمة ←</a></div>
         <a class="go" href="prothese-flexible-silicone.html">صفحة الخدمة بالتفصيل ←</a>
       </article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-stellite.jpg" alt="قوالب عمل حقيقية في مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="03"><div class="ph"><img src="labo/svc-stellite.jpg" alt="قوالب عمل حقيقية في مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Classique · Stellite</div><h3>التركيبة الجزئية الكلاسيكية</h3>
         <p>الاختيار التقليدي بهيكل معدني (Stellite) للي كيحتاج ثبات أكبر. في المختبر كنشرحو لك الفرق بين المرنة والكلاسيكية باش تختاري اللي يناسب حالتك.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A9%20%D8%A7%D9%84%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%8A%D8%A9">اسألي على هاد الخدمة ←</a></div>
         <a class="go" href="prothese-stellite.html">صفحة الخدمة بالتفصيل ←</a>
       </article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-snapon.jpg" alt="ابتسامة برينسيسا الطنجاوية بعد Snap-on Smile عند Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="04"><div class="ph"><img src="labo/svc-snapon.jpg" alt="ابتسامة برينسيسا الطنجاوية بعد Snap-on Smile عند Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Snap-on Smile</div><h3>سناب-أون سمايل</h3>
         <p>ابتسامة قابلة للإزالة كتلبس فوق الأسنان وكتبدل الشكل في الحين — بلا حفر وبلا ألم. شوفي شهادة زبون حقيقية في قسم الفيديوهات تحت.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20Snap-on%20Smile">اسألي على هاد الخدمة ←</a></div></article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-gouttiere.jpg" alt="قوالب عمل حقيقية في مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="05"><div class="ph"><img src="labo/svc-gouttiere.jpg" alt="قوالب عمل حقيقية في مختبر Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Gouttière de contention</div><h3>الواقي الليلي — Gouttière</h3>
         <p>كيتلبس بالليل بعد التقويم باش الأسنان ما ترجعش لبلاصتها، وكيحمي حتى الناس اللي كيصرّو أسنانهم وهم ناعسين. كيتصايب هنا في المغرب على مقاس فمك.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D9%88%D8%A7%D9%82%D9%8A%20%D8%A7%D9%84%D9%84%D9%8A%D9%84%D9%8A%20Goutti%C3%A8re">اسألي على هاد الخدمة ←</a></div></article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-couronnes.jpg" alt="ابتسامة زبون حقيقية عند Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="06"><div class="ph"><img src="labo/svc-couronnes.jpg" alt="ابتسامة زبون حقيقية عند Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Couronnes · Facettes</div><h3>التيجان والوجوه الخزفية</h3>
         <p>تيجان ووجوه (facettes) خزفية بلمسة طبيعية — كيتعرضو ويتشرحو لك بالتفصيل في المختبر قبل أي قرار، باش تشوفي النتيجة المتوقعة بعينيك.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A7%D9%84%D8%AA%D9%8A%D8%AC%D8%A7%D9%86%20%D9%88%D8%A7%D9%84%D9%88%D8%AC%D9%88%D9%87%20%D8%A7%D9%84%D8%AE%D8%B2%D9%81%D9%8A%D8%A9">اسألي على هاد الخدمة ←</a></div>
         <a class="go" href="couronnes-facettes.html">صفحة الخدمة بالتفصيل ←</a>
       </article>
 
-      <article class="svc rv"><div class="ph"><img src="labo/svc-strass.jpg" alt="ابتسامة زبون حقيقية عند Labo Ahlam" loading="lazy"></div><div class="bd">
+      <article class="svc rv" data-n="07"><div class="ph"><img src="labo/svc-strass.jpg" alt="ابتسامة زبون حقيقية عند Labo Ahlam" loading="lazy"></div><div class="bd">
         <div class="fr">Strass dentaire</div><h3>أحجار الأسنان — Strass</h3>
         <p>لمعة صغيرة كتبدل الابتسامة: أحجار أسنان بأشكال وأحجام مختلفة — منها شكل الدمعة والأحجام الصغيرة الرقيقة. شوفي الفيديو ديالها في قسم إنستغرام.</p>
         <a class="go" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%B9%D9%84%D9%89%20%D8%A3%D8%AD%D8%AC%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86%20Strass">اسألي على هاد الخدمة ←</a></div></article>
@@ -533,7 +558,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 
 
 <section id="avant-apres">
-  <div class="wrap">
+  <span class="ghost" aria-hidden="true">٠٢</span><div class="wrap">
     <div class="eyebrow">Avant / Après · قبل وبعد</div>
     <h2 class="title rv">شوفي الفرق بعينيك — جرّي المؤشر</h2>
     <p class="lede rv">حالات حقيقية من شغل المختبر، قبل وبعد. جرّي المؤشر فوق كل حالة باش تقارني النتيجة.</p>
@@ -560,7 +585,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   </div>
 </section>
 <section id="process" style="background:var(--bg2)">
-  <div class="wrap">
+  <span class="ghost" aria-hidden="true">٠٣</span><div class="wrap">
     <div class="eyebrow">Le parcours · المراحل</div>
     <h2 class="title rv" data-i="procT">كيفاش كتمشي الخدمة؟</h2>
     <p class="lede rv">أربعة مراحل واضحة — بلا مفاجآت.</p>
@@ -603,7 +628,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 </section>
 
 <section id="faq" style="background:var(--bg2)">
-  <div class="wrap">
+  <span class="ghost" aria-hidden="true">٠٤</span><div class="wrap">
     <div class="eyebrow" style="text-align:center">Questions fréquentes</div>
     <h2 class="title rv" style="text-align:center" data-i="faqT">الأسئلة اللي كتعاود بزاف</h2>
     <div class="acc">
@@ -652,7 +677,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   </div>
 </section>
 
-<footer>
+<footer><div class="foot-giant" aria-hidden="true">LABO AHLAM</div>
   <div class="wrap foot">
     <div>
       <div class="logo"><span>LABO</span> <b>AHLAM</b> <img class="logo-mark" src="labo/logo-mark.png" alt="شعار Labo Ahlam"></div>
