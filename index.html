@@ -231,6 +231,8 @@ section .wrap{position:relative;z-index:1}
 .fdots{text-align:center;margin-top:16px}
 .fdots button{width:9px;height:9px;border-radius:99px;border:0;background:#27507e;margin:0 4px;cursor:pointer;padding:0;transition:all .3s}
 .fdots button.on{width:26px;background:var(--vio2)}
+.fcard.pos-h{transform:translate(-50%,-50%) scale(.55);opacity:0;pointer-events:none;z-index:1}
+.fcnt{text-align:center;margin-top:14px;color:var(--mut);font-weight:800;font-size:13px;letter-spacing:.14em}
 .fnote{text-align:center;color:var(--mut);font-size:13px;margin-top:10px}
 @media(max-width:640px){.flow3d{height:540px}.fcard.pos-l{transform:translate(-50%,-50%) translateX(-64%) rotateY(46deg) scale(.68)}.fcard.pos-r{transform:translate(-50%,-50%) translateX(64%) rotateY(-46deg) scale(.68)}}
 </style>
@@ -487,19 +489,7 @@ section .wrap{position:relative;z-index:1}
 <div class="stars-wall" dir="ltr"><div class="stars-track"><figure class="star-card" data-celeb="1"><video src="labo/celeb-video.mp4" poster="labo/celeb-after.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="برينسيسا الطنجاوية — فيديو محسّن عند Labo Ahlam"></video><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card"><img src="labo/celeb-before-pro.jpg" alt="برينسيسا الطنجاوية — صورة احترافية قبل التركيب عند Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا الطنجاوية</b><span>صورة احترافية قبل التركيب</span></figcaption></figure><figure class="star-card"><video src="labo/ig-star-video.mp4" poster="labo/ig-star.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — فيديو من زيارتو</span></figcaption></figure><figure class="star-card"><video src="labo/ig-fit-video.mp4" poster="labo/ig-fit.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — أثناء التركيب</span></figcaption></figure><figure class="star-card"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/celeb-video.mp4" poster="labo/celeb-after.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="برينسيسا الطنجاوية — فيديو محسّن عند Labo Ahlam"></video><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/celeb-before-pro.jpg" alt="برينسيسا الطنجاوية — صورة احترافية قبل التركيب عند Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا الطنجاوية</b><span>صورة احترافية قبل التركيب</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/ig-star-video.mp4" poster="labo/ig-star.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — فيديو من زيارتو</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/ig-fit-video.mp4" poster="labo/ig-fit.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — أثناء التركيب</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure></div></div>
   </div>
 </section>
-<section id="photos3d">
-  <div class="wrap">
-    <div class="eyebrow">Galerie 3D · من قلب المختبر</div>
-    <h2 class="title rv">صور حقيقية… بعرض ثلاثي الأبعاد</h2>
-    <p class="gal-hint rv">جرّي الصور بجنب، وشدّي الصورة اللي في الوسط ودوّريها بصبعك — بحال كتمسّي الابتسامة بيدك.</p>
-  </div>
-  <div id="gal3dB"><div class="gal-track" id="galTrackB">
-    <figure class="gcard"><img src="labo/celeb3.jpg" alt="نتيجة حقيقية — ابتسامة زبون عند Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>نتيجة حقيقية — ابتسامة زبون</figcaption></figure>
-    <figure class="gcard"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية بعد Snap-on Smile عند Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>برينسيسا الطنجاوية — بعد Snap-on Smile</figcaption></figure>
-    <figure class="gcard"><img src="labo/ig-fit.jpg" alt="أثناء تركيب التركيبة في مختبر Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>أثناء التركيب — في المختبر</figcaption></figure>
-    <figure class="gcard"><img src="labo/ph-dentures.jpg" alt="تركيبة أسنان واجدة من إنتاج مختبر Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>تركيبات واجدة — من المختبر</figcaption></figure>
-  </div></div>
-</section>
+
 <section id="services">
   <span class="ghost" aria-hidden="true">٠١</span><div class="wrap">
     <div class="eyebrow">Nos services · خدماتنا</div>
@@ -626,7 +616,7 @@ section .wrap{position:relative;z-index:1}
     <div class="eyebrow">Instagram · @labo_ahlam</div>
     <h2 class="title rv" data-i="reelT">من إنستغرامها — الشرح بصوتها</h2>
     <p class="lede rv">228 ألف متابِعة كيتعلمو منها كل نهار. هاد الفيديوهات من صفحتها مباشرة:</p>
-    <div class="flow3d" id="flow3d"><div class="fcard"><video src="labo/reel-flex.mp4" poster="labo/reel-flex.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>التركيبة المرنة</b><span>أحلام كتورّي علاش كتتنى وما كتكسرش</span></div></div><div class="fcard"><video src="labo/reel-strass.mp4" poster="labo/reel-strass.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الستراس — أحجار الأسنان</b><span>لمعة صغيرة كتبدّل الابتسامة</span></div></div><div class="fcard"><video src="labo/reel-result.mp4" poster="labo/reel-result.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>تحوّل حقيقي</b><span>ابتسامة قبل وبعد — نتيجة من المختبر</span></div></div><button class="fnav pr" aria-label="prev">&#8249;</button><button class="fnav nx" aria-label="next">&#8250;</button></div><div class="fdots"><button aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button></div><p class="fnote">فيديوهات من إنستغرامها @labo_ahlam — محمّلة هنا مباشرة: تفرّج بلا ما تخرج من الموقع</p>
+    <div class="flow3d" id="flow3d"><div class="fcard"><video src="labo/reel-flex.mp4" poster="labo/reel-flex.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>التركيبة المرنة</b><span>أحلام كتورّي علاش كتتنى وما كتكسرش</span></div></div><div class="fcard"><video src="labo/reel-strass.mp4" poster="labo/reel-strass.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الستراس — أحجار الأسنان</b><span>لمعة صغيرة كتبدّل الابتسامة</span></div></div><div class="fcard"><video src="labo/reel-result.mp4" poster="labo/reel-result.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>تحوّل حقيقي</b><span>ابتسامة قبل وبعد — نتيجة من المختبر</span></div></div><div class="fcard"><video src="labo/reel-gouttiere.mp4" poster="labo/reel-gouttiere.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الغوتيير</b><span>أحلام كتجاوب على أسئلتكم</span></div></div><div class="fcard"><video src="labo/reel-complete.mp4" poster="labo/reel-complete.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>التركيبة الكاملة</b><span>الشرح الكامل من أ حتى ي</span></div></div><div class="fcard"><video src="labo/reel-types.mp4" poster="labo/reel-types.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>أنواع التركيبات</b><span>شنو الفرق بيناتهم؟</span></div></div><div class="fcard"><video src="labo/reel-teintes.mp4" poster="labo/reel-teintes.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>درجات لون الأسنان</b><span>كيفاش كنختارو اللون الطبيعي</span></div></div><div class="fcard"><video src="labo/reel-partielle.mp4" poster="labo/reel-partielle.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>المرنة الجزئية</b><span>سؤال وجواب مع أحلام</span></div></div><div class="fcard"><video src="labo/reel-qualite.mp4" poster="labo/reel-qualite.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الجودة واللون</b><span>شنو خاصك تعرف قبل ما تصايب</span></div></div><div class="fcard"><video src="labo/reel-sourire.mp4" poster="labo/reel-sourire.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الابتسامة البيضاء</b><span>أحلام كتشرح التركيبة البيضاء</span></div></div><div class="fcard"><video src="labo/reel-piece.mp4" poster="labo/reel-piece.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>قطعة مرنة صغيرة</b><span>علاش مهمة؟ أحلام كتورّيك</span></div></div><button class="fnav pr" aria-label="prev">&#8249;</button><button class="fnav nx" aria-label="next">&#8250;</button></div><div class="fcnt"><span id="fcnt">1 / 11</span></div><p class="fnote">فيديوهات من إنستغرامها @labo_ahlam — محمّلة هنا مباشرة: تفرّج بلا ما تخرج من الموقع</p>
       <div class="avis-grid">
       <div class="avis rv"><div class="stars">★★★★★</div><p>«كنبغي نشكر أحلام على الابتسامة الجميلة اللي صايبت ليا — شكراً بزاف»</p><small>من تعليقات زبوناتها على إنستغرام</small></div>
       <div class="avis rv"><div class="stars">★★★★★</div><p>«شكراً أحلام على اللطافة والأخلاق»</p><small>من تعليقات زبوناتها على إنستغرام</small></div>
@@ -818,16 +808,16 @@ document.querySelectorAll('[data-ba]').forEach(function(box){
 (function(){
  var stage=document.getElementById('flow3d'); if(!stage) return;
  var cards=[].slice.call(stage.querySelectorAll('.fcard'));
- var dots=[].slice.call(document.querySelectorAll('.fdots button'));
- var order=[0,1,2], soundCard=null;
+ var cnt=document.getElementById('fcnt');
+ var order=cards.map(function(_,i){return i;}), soundCard=null;
  function render(){
    cards.forEach(function(c,i){
      var pos=order.indexOf(i), v=c.querySelector('video');
-     c.classList.toggle('pos-c',pos===0); c.classList.toggle('pos-l',pos===1); c.classList.toggle('pos-r',pos===2);
+     c.classList.toggle('pos-c',pos===0); c.classList.toggle('pos-l',pos===1); c.classList.toggle('pos-r',pos===2); c.classList.toggle('pos-h',pos>2);
      if(pos===0){ if(c!==soundCard){ v.muted=true; v.removeAttribute('controls'); } v.play().catch(function(){}); }
      else { v.pause(); v.muted=true; v.removeAttribute('controls'); if(c===soundCard){ soundCard=null; c.classList.remove('snd'); } }
    });
-   dots.forEach(function(d,i){ d.classList.toggle('on', order[0]===i); });
+   if(cnt) cnt.textContent=(order[0]+1)+' / '+cards.length;
  }
  function goTo(i){ while(order[0]!==i) order.push(order.shift()); render(); }
  cards.forEach(function(c,i){ c.addEventListener('click',function(){
@@ -839,7 +829,6 @@ document.querySelectorAll('[data-ba]').forEach(function(box){
  var pv=stage.querySelector('.fnav.pr'), nx=stage.querySelector('.fnav.nx');
  if(pv) pv.addEventListener('click',function(e){ e.stopPropagation(); order.unshift(order.pop()); render(); });
  if(nx) nx.addEventListener('click',function(e){ e.stopPropagation(); order.push(order.shift()); render(); });
- dots.forEach(function(d,i){ d.addEventListener('click',function(){ goTo(i); }); });
  if('IntersectionObserver' in window){ new IntersectionObserver(function(en){
    en.forEach(function(e){ var c=cards[order[0]], v=c&&c.querySelector('video'); if(!v) return;
      if(e.isIntersecting){ if(c!==soundCard) v.play().catch(function(){}); } else v.pause(); });
