@@ -235,6 +235,19 @@ section .wrap{position:relative;z-index:1}
 .fcnt{text-align:center;margin-top:14px;color:var(--mut);font-weight:800;font-size:13px;letter-spacing:.14em}
 .fnote{text-align:center;color:var(--mut);font-size:13px;margin-top:10px}
 @media(max-width:640px){.flow3d{height:540px}.fcard.pos-l{transform:translate(-50%,-50%) translateX(-64%) rotateY(46deg) scale(.68)}.fcard.pos-r{transform:translate(-50%,-50%) translateX(64%) rotateY(-46deg) scale(.68)}}
+
+/* ===== clarity pass: contents bar, services at-a-glance, slim mobile nav ===== */
+section{scroll-margin-top:86px}
+.toc{position:relative;z-index:5;background:rgba(6,22,44,.72);border-block:1px solid var(--line);backdrop-filter:blur(6px)}
+.toc .wrap{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding-block:12px}
+.toc .lb{color:var(--mut);font-size:12.5px;font-weight:800;white-space:nowrap}
+.toc a{color:#dceeff;font-size:13px;font-weight:700;border:1px solid var(--line);border-radius:99px;padding:6px 13px;background:rgba(47,141,240,.08)}
+.toc a:hover{background:var(--vio);color:#fff}
+.glance{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 6px}
+.glance a{display:inline-flex;align-items:center;gap:8px;color:#eaf5ff;font-weight:800;font-size:13.5px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(47,141,240,.14),rgba(47,141,240,.05));padding:9px 14px;border-radius:12px}
+.glance a i{font-style:normal;color:var(--vio2);font-size:12px}
+.glance a:hover{border-color:var(--vio2);transform:translateY(-1px)}
+@media(max-width:860px){ .chaps a[href="#galerie"], .chaps a[href="#process"], .chaps a[href="#reels"]{display:none} }
 </style>
 
 <style>
@@ -482,7 +495,8 @@ section .wrap{position:relative;z-index:1}
 
 
 
-<div class="strip" aria-hidden="true"><div class="strip-track"><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span></div></div><section id="stars">
+<div class="strip" aria-hidden="true"><div class="strip-track"><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span><span>Prothèse complète ✦ Prothèse flexible silicone ✦ Prothèse classique & stellite ✦ Snap-on Smile ✦ Gouttière de contention ✦ Couronnes & facettes céramique ✦ Strass dentaire ✦ LABO AHLAM ✦</span></div></div><nav class="toc"><div class="wrap"><span class="lb">On this page:</span><a href="#services">Services</a><a href="#avant-apres">Before / After</a><a href="#reels">Explainer videos</a><a href="#stars">Celebrities</a><a href="espace-dentistes.html">For dentists</a><a href="#faq">FAQ</a><a href="#rdv">Book</a></div></nav>
+<section id="stars">
   <div class="wrap">
     <div class="eyebrow">The celebrity wall · They trust us</div>
     <h2 class="title rv">Famous smiles… made here</h2>
@@ -496,7 +510,7 @@ section .wrap{position:relative;z-index:1}
     <div class="eyebrow">Our services</div>
     <h2 class="title rv" data-i="svcT">What do we make at the lab?</h2>
     <p class="lede rv">Every service explained simply — no complicated terms. Pick a service and go straight to WhatsApp to ask for details and the price for your case.</p>
-    <div class="svc-grid">
+    <div class="glance"><a href="prothese-complete.html"><i>✦</i>Complete denture</a><a href="prothese-flexible-silicone.html"><i>✦</i>Flexible silicone partial</a><a href="prothese-stellite.html"><i>✦</i>Classic / stellite partial</a><a href="snap-on-smile.html"><i>✦</i>Snap-on Smile</a><a href="gouttiere.html"><i>✦</i>Dental splint</a><a href="couronnes-facettes.html"><i>✦</i>Crowns & veneers</a><a href="strass-dentaire.html"><i>✦</i>Dental gems</a></div><div class="svc-grid">
       <article class="svc rv" data-n="01"><div class="ph"><img src="../labo/svc-complete.jpg" alt="A real complete denture made by the Labo Ahlam laboratory" loading="lazy"></div><div class="bd">
         <div class="fr">Prothèse complète</div><h3>Complete denture</h3>
         <p>A full upper & lower denture for people who have lost their teeth. There are several types and shades, and the choice is made to suit your taste and face shape — as Ahlam explains in her videos.</p>
@@ -562,6 +576,7 @@ section .wrap{position:relative;z-index:1}
   <div class="wrap">
     <div class="eyebrow">3D Gallery · From the lab</div>
     <h2 class="title rv" data-i="galT">The craft… in 3D photos</h2>
+<p class="lede rv">Real photos from the workbench and our own production — no filters, no stock images.</p>
     <p class="gal-hint rv">Swipe the photos sideways, grab the one in the middle and rotate it with your finger — as if you were touching the prosthesis with your hand.</p>
   </div>
   <div id="gal3d"><div class="gal-track" id="galTrack">
@@ -630,6 +645,7 @@ section .wrap{position:relative;z-index:1}
   <span class="ghost" aria-hidden="true">04</span><div class="wrap">
     <div class="eyebrow" style="text-align:center">Questions fréquentes</div>
     <h2 class="title rv" style="text-align:center" data-i="faqT">Frequently asked questions</h2>
+<p class="lede rv">Frank, simple answers to the most frequent questions — for anything else, ask us on WhatsApp.</p>
     <div class="acc">
       <div class="faq-it"><button type="button">Can the silicone denture handle hot and hard food?<span class="pl">+</span></button><div class="ans"><p>According to Ahlam's explanations in her videos: the flexible denture is made for normal everyday use — hot food, hard foods like nuts, and hot drinks like coffee — with the usual care any denture needs.</p></div></div>
       <div class="faq-it"><button type="button">How long does a prosthesis take to be ready?<span class="pl">+</span></button><div class="ans"><p>Timing varies by type and case — for example, one client's Snap-on Smile case was ready in two weeks. Your exact timeline is confirmed right at booking.</p></div></div>
