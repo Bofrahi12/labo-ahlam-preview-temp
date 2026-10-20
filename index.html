@@ -210,6 +210,29 @@ section .wrap{position:relative;z-index:1}
 #baStage{box-shadow:0 34px 90px -22px rgba(47,155,232,.45),0 0 0 1px rgba(124,195,238,.18)}
 .foot-giant{font-family:'Marcellus',serif;font-size:clamp(58px,13.5vw,168px);line-height:.98;text-align:center;color:transparent;-webkit-text-stroke:1.5px rgba(124,195,238,.30);letter-spacing:.05em;padding:30px 0 2px;user-select:none;direction:ltr}
 @media(max-width:760px){.svc{grid-template-columns:1fr}.svc .ph{min-height:210px;order:0!important}.svc::before{font-size:56px}.ghost{font-size:84px}}
+
+/* ===== 3D video gallery (self-hosted reels) ===== */
+#reels{overflow-x:clip}
+.flow3d{position:relative;height:610px;perspective:1500px;margin-top:30px}
+.fcard{position:absolute;left:50%;top:50%;width:min(330px,74vw);aspect-ratio:9/16;transition:transform .75s cubic-bezier(.22,.9,.28,1),filter .75s;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.fcard video{width:100%;height:100%;object-fit:cover;border-radius:20px;border:1px solid var(--line);background:#04101f;display:block}
+.fcard.pos-c{transform:translate(-50%,-50%) rotateY(0deg) scale(1);z-index:5;filter:none}
+.fcard.pos-c video{box-shadow:0 34px 90px rgba(47,141,240,.38)}
+.fcard.pos-l{transform:translate(-50%,-50%) translateX(-94%) rotateY(42deg) scale(.76);z-index:3;filter:brightness(.48) saturate(.75)}
+.fcard.pos-r{transform:translate(-50%,-50%) translateX(94%) rotateY(-42deg) scale(.76);z-index:3;filter:brightness(.48) saturate(.75)}
+.fcap{position:absolute;left:0;right:0;bottom:0;padding:38px 16px 14px;border-radius:0 0 20px 20px;background:linear-gradient(transparent,rgba(2,10,22,.88));color:#fff;pointer-events:none}
+.fcap b{display:block;font-size:17px}
+.fcap span{font-size:12.5px;color:#cfe6ff}
+.fsnd{position:absolute;top:12px;inset-inline-start:12px;background:rgba(2,12,26,.72);border:1px solid rgba(160,210,255,.5);color:#eaf5ff;font-size:12px;font-weight:700;padding:6px 12px;border-radius:99px;display:none;pointer-events:none;backdrop-filter:blur(4px)}
+.fcard.pos-c:not(.snd) .fsnd{display:block}
+.fnav{position:absolute;top:50%;transform:translateY(-50%);z-index:8;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(6,24,46,.8);color:#eaf5ff;font-size:24px;line-height:1;cursor:pointer;backdrop-filter:blur(4px)}
+.fnav:hover{background:var(--vio)}
+.fnav.pr{inset-inline-start:2px}.fnav.nx{inset-inline-end:2px}
+.fdots{text-align:center;margin-top:16px}
+.fdots button{width:9px;height:9px;border-radius:99px;border:0;background:#27507e;margin:0 4px;cursor:pointer;padding:0;transition:all .3s}
+.fdots button.on{width:26px;background:var(--vio2)}
+.fnote{text-align:center;color:var(--mut);font-size:13px;margin-top:10px}
+@media(max-width:640px){.flow3d{height:540px}.fcard.pos-l{transform:translate(-50%,-50%) translateX(-64%) rotateY(46deg) scale(.68)}.fcard.pos-r{transform:translate(-50%,-50%) translateX(64%) rotateY(-46deg) scale(.68)}}
 </style>
 
 <style>
@@ -603,23 +626,8 @@ section .wrap{position:relative;z-index:1}
     <div class="eyebrow">Instagram · @labo_ahlam</div>
     <h2 class="title rv" data-i="reelT">من إنستغرامها — الشرح بصوتها</h2>
     <p class="lede rv">228 ألف متابِعة كيتعلمو منها كل نهار. هاد الفيديوهات من صفحتها مباشرة:</p>
-    <div class="reels-grid">
-      <div class="reel-box rv">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DefEOEbizQ9/" data-instgrm-version="14" style="width:100%;margin:0 auto;max-width:340px"></blockquote>
-        <div class="cap">أحجار الأسنان — Strass<span>الأشكال والأحجام اللي كاينة، مشروحة بصوتها</span></div>
-      </div>
-      <div class="reel-box rv">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DemxcM2C7tN/" data-instgrm-version="14" style="width:100%;margin:0 auto;max-width:340px"></blockquote>
-        <div class="cap">تركيبة السيليكون<span>واش كتتحمل السخونية والماكلة القاصحة؟ الجواب ديالها</span></div>
-      </div>
-      <div class="reel-box rv">
-        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DZQmIxJqlJh/" data-instgrm-version="14" style="width:100%;margin:0 auto;max-width:340px"></blockquote>
-        <div class="cap">شهادة زبونة<span>«كنبغي نشكر أحلام على الابتسامة الجميلة اللي صايبت ليا»</span></div>
-      </div>
-    </div>
-
-    <h2 class="title rv" style="margin-top:56px">شنو قالو الزبونات؟</h2>
-    <div class="avis-grid">
+    <div class="flow3d" id="flow3d"><div class="fcard"><video src="labo/reel-flex.mp4" poster="labo/reel-flex.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>التركيبة المرنة</b><span>أحلام كتورّي علاش كتتنى وما كتكسرش</span></div></div><div class="fcard"><video src="labo/reel-strass.mp4" poster="labo/reel-strass.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>الستراس — أحجار الأسنان</b><span>لمعة صغيرة كتبدّل الابتسامة</span></div></div><div class="fcard"><video src="labo/reel-result.mp4" poster="labo/reel-result.jpg" preload="metadata" playsinline loop muted></video><div class="fsnd">🔊 اضغط للصوت</div><div class="fcap"><b>تحوّل حقيقي</b><span>ابتسامة قبل وبعد — نتيجة من المختبر</span></div></div><button class="fnav pr" aria-label="prev">&#8249;</button><button class="fnav nx" aria-label="next">&#8250;</button></div><div class="fdots"><button aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button></div><p class="fnote">فيديوهات من إنستغرامها @labo_ahlam — محمّلة هنا مباشرة: تفرّج بلا ما تخرج من الموقع</p>
+      <div class="avis-grid">
       <div class="avis rv"><div class="stars">★★★★★</div><p>«كنبغي نشكر أحلام على الابتسامة الجميلة اللي صايبت ليا — شكراً بزاف»</p><small>من تعليقات زبوناتها على إنستغرام</small></div>
       <div class="avis rv"><div class="stars">★★★★★</div><p>«شكراً أحلام على اللطافة والأخلاق»</p><small>من تعليقات زبوناتها على إنستغرام</small></div>
       <div class="avis rv"><div class="stars">★★★★★</div><p>زبون جرب Snap-on Smile وشارك النتيجة بفيديو: تجربة وصفها بالممتازة، والابتسامة ولات واجدة من بعد أسبوعين.</p><small>شهادة مصوّرة منشورة على إنستغرام</small></div>
@@ -698,7 +706,7 @@ section .wrap{position:relative;z-index:1}
 
 <a id="wa-pill" data-i="pill" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1" target="_blank" rel="noopener">💬 واتساب المختبر</a>
 
-<script async src="https://www.instagram.com/embed.js"></script>
+
 <script src="lib/gsap.min.js"></script>
 <script src="lib/ScrollTrigger.min.js"></script>
 <script src="lib/lenis.min.js"></script>
@@ -803,6 +811,40 @@ document.querySelectorAll('[data-ba]').forEach(function(box){
    setTimeout(function(){ L.classList.add('done'); setTimeout(function(){ L.style.display='none'; },760); },160); }
  window.addEventListener('load', function(){ setTimeout(go, 350); });
  setTimeout(go, 2600);
+})();
+</script>
+
+<script>
+(function(){
+ var stage=document.getElementById('flow3d'); if(!stage) return;
+ var cards=[].slice.call(stage.querySelectorAll('.fcard'));
+ var dots=[].slice.call(document.querySelectorAll('.fdots button'));
+ var order=[0,1,2], soundCard=null;
+ function render(){
+   cards.forEach(function(c,i){
+     var pos=order.indexOf(i), v=c.querySelector('video');
+     c.classList.toggle('pos-c',pos===0); c.classList.toggle('pos-l',pos===1); c.classList.toggle('pos-r',pos===2);
+     if(pos===0){ if(c!==soundCard){ v.muted=true; v.removeAttribute('controls'); } v.play().catch(function(){}); }
+     else { v.pause(); v.muted=true; v.removeAttribute('controls'); if(c===soundCard){ soundCard=null; c.classList.remove('snd'); } }
+   });
+   dots.forEach(function(d,i){ d.classList.toggle('on', order[0]===i); });
+ }
+ function goTo(i){ while(order[0]!==i) order.push(order.shift()); render(); }
+ cards.forEach(function(c,i){ c.addEventListener('click',function(){
+   if(order[0]!==i){ goTo(i); return; }
+   var v=c.querySelector('video');
+   if(soundCard===c){ if(v.paused) v.play().catch(function(){}); else v.pause(); }
+   else { soundCard=c; c.classList.add('snd'); v.muted=false; v.setAttribute('controls',''); v.play().catch(function(){}); }
+ });});
+ var pv=stage.querySelector('.fnav.pr'), nx=stage.querySelector('.fnav.nx');
+ if(pv) pv.addEventListener('click',function(e){ e.stopPropagation(); order.unshift(order.pop()); render(); });
+ if(nx) nx.addEventListener('click',function(e){ e.stopPropagation(); order.push(order.shift()); render(); });
+ dots.forEach(function(d,i){ d.addEventListener('click',function(){ goTo(i); }); });
+ if('IntersectionObserver' in window){ new IntersectionObserver(function(en){
+   en.forEach(function(e){ var c=cards[order[0]], v=c&&c.querySelector('video'); if(!v) return;
+     if(e.isIntersecting){ if(c!==soundCard) v.play().catch(function(){}); } else v.pause(); });
+ },{threshold:.25}).observe(stage); }
+ render();
 })();
 </script>
 </body>
