@@ -376,6 +376,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 <link rel="icon" type="image/png" href="labo/favicon.png">
 <style>.tilt video.main{width:100%;height:520px;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:0 40px 80px rgba(0,0,0,.5);display:block;background:#04101f}@media(max-width:760px){.tilt video.main{height:400px}}.tilt .chip.c0{top:14px;inset-inline-start:14px;background:linear-gradient(120deg,#0e5aa8,#19b3e6);color:#fff;border:none;font-weight:800}.tilt-scene{position:relative}.tilt-scene::before{content:"";position:absolute;inset:-8% -4%;background:radial-gradient(closest-side,rgba(25,179,230,.28),transparent 70%);filter:blur(18px);z-index:-1}</style>
 <style>.svc .ph.ph-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%,#123a5f,#081c30);min-height:170px}.svc .ph.ph-art svg{width:92px;height:92px;filter:drop-shadow(0 10px 24px rgba(47,128,237,.45))}.svc-hero-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%,#123a5f,#081c30);border-radius:18px;min-height:240px}.svc-hero-art svg{width:130px;height:130px;filter:drop-shadow(0 14px 30px rgba(47,128,237,.45))}</style>
+<style>.stars-wall{overflow:hidden;margin-top:34px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.stars-track{display:flex;gap:16px;width:max-content;animation:starsScroll 32s linear infinite}.stars-wall:hover .stars-track{animation-play-state:paused}@keyframes starsScroll{to{transform:translateX(-50%)}}.star-card{margin:0;width:228px;flex:0 0 auto;border-radius:18px;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35)}.star-card img,.star-card video{width:100%;height:288px;object-fit:cover;display:block}.star-card figcaption{padding:12px 14px;text-align:right}.star-card figcaption b{display:block;font-size:16px}.star-card figcaption span{color:var(--mut);font-size:13px}@media (prefers-reduced-motion: reduce){.stars-track{animation:none}}</style>
 </head>
 <body>
 <div id="loader"><div class="lg"><span style="font-family:'Marcellus',serif">LABO</span> <b>AHLAM</b> <img class="logo-mark" src="labo/logo-mark.png" alt="شعار Labo Ahlam"></div><div class="bar2"><i id="loadFill"></i></div><div class="micro">كنوجدو لك الابتسامة…</div></div>
@@ -435,14 +436,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     <div class="eyebrow">واجهة المشاهير · Ils nous font confiance</div>
     <h2 class="title rv">ابتسامات معروفة… تصنعات هنا</h2>
     <p class="lede rv">وجوه معروفة وثقات في خدمة المختبر لابتسامتها — الصور والأسماء الأصلية ديالهم.</p>
-    <div class="celeb-grid">
-      <article class="celeb rv" data-celeb="1"><div class="ph ph-photo"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية بعد علاج ابتسامتها عند Labo Ahlam" loading="lazy"></div><h3>برينسيسا الطنجاوية</h3><p>Snap-on Smile — ابتسامتها الجديدة بلا حفر وبلا ألم</p></article>
-      <article class="celeb rv" data-celeb="2"><div class="ph ph-photo"><img src="labo/resultat-sourire.jpg" alt="بروبادور بعد علاج ابتسامته عند Labo Ahlam" loading="lazy"></div><h3>بروبادور</h3><p>مغني مشهور — ابتسامتو تصنعات عندنا</p></article>
-      <article class="celeb rv" data-celeb="3"><div class="ph ph-photo"><img src="labo/celeb3.jpg" alt="مشهور على إنستغرام بعد تحوّل ابتسامته عند Labo Ahlam" loading="lazy"></div><h3>من إنستغرام</h3><p>شاهدي تحوّل ابتسامتو كامل في الفيديو</p><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" muted loop playsinline controls preload="metadata" style="width:100%;border-radius:14px;margin-top:12px"></video></article>
-      <article class="celeb rv" data-celeb="4"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
-      <article class="celeb rv" data-celeb="5"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
-      <article class="celeb rv" data-celeb="6"><div class="ph">+</div><h3>الاسم</h3><p>الخدمة</p></article>
-    </div>
+<div class="stars-wall" dir="ltr"><div class="stars-track"><figure class="star-card"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card"><img src="labo/resultat-sourire.jpg" alt="بروبادور — Labo Ahlam" loading="lazy" style="object-position:center 25%"><figcaption><b>بروبادور</b><span>مغني مشهور</span></figcaption></figure><figure class="star-card"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/resultat-sourire.jpg" alt="بروبادور — Labo Ahlam" loading="lazy" style="object-position:center 25%"><figcaption><b>بروبادور</b><span>مغني مشهور</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure></div></div>
   </div>
 </section>
 <section id="film">
@@ -618,7 +612,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 <section id="rdv">
   <div class="wrap">
     <div class="eyebrow">Rendez-vous · الحجز</div>
-    <h2 class="title rv" data-i="rdvT">احجزي في دقيقة — بلا تعقيد</h2>
+    <h2 class="title rv" data-i="rdvT">تواصلي معانا في واتساب — مباشرة</h2>
       <img class="brand-poster rv" src="labo/brand-poster.jpg" alt="Labo Ahlam — أوقات العمل: 10:00 إلى 13:00 و 15:00 إلى 19:30" loading="lazy">
       <img class="logo-off rv" src="labo/logo-officiel.png" alt="الشعار الرسمي — dentiste LABO AHLAM" loading="lazy">
     <div class="rdv-grid">
@@ -627,19 +621,13 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
         <div class="tr"><i>✦</i> الشرح والصور قبل أي قرار</div>
         <div class="tr"><i>✦</i> الاستشارة بلا التزام</div>
       </div>
-      <form class="book rv" id="bookForm">
-        <label>الاسم الكامل<input id="fName" type="text" placeholder="مثال: فاطمة الزهراء" autocomplete="name"></label>
-        <label>رقم الهاتف / واتساب<input id="fPhone" type="tel" placeholder="06 XX XX XX XX" autocomplete="tel"></label>
-        <label>الخدمة اللي بغيتي
-          <select id="fSvc">
-            <option>التركيبة الكاملة</option><option>التركيبة الجزئية المرنة — سيليكون</option><option>التركيبة الجزئية الكلاسيكية</option><option>Snap-on Smile</option><option>الواقي الليلي — Gouttière</option><option>التيجان والوجوه الخزفية</option><option>أحجار الأسنان — Strass</option><option>استشارة — ما زال ما عارفة</option>
-          </select></label>
-        <label>المدينة<input id="fCity" type="text" placeholder="منين غادي تجي؟"></label>
-        <label>رسالتك<textarea id="fMsg" rows="3" placeholder="شرحي حالتك باختصار…"></textarea></label>
-        <button class="btn btn-wa" type="submit" style="justify-content:center;font-size:17px;padding:16px">صيفطي الطلب في واتساب ←</button>
-        <p class="micro" style="text-align:center">الطلب كيوصل مباشرة لواتساب المختبر 0609238630</p>
-        <a class="btn btn-ghost" style="justify-content:center" target="_blank" rel="noopener" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86">أو صيفطي غير «السلام» دابا — بلا ما تعمري والو</a>
-      </form>
+      <div class="book rv" style="text-align:center">
+        <div style="font-size:44px;line-height:1">💬</div>
+        <h3 style="font-size:24px;margin:14px 0 8px">بغيتي تجي للمختبر؟</h3>
+        <p style="color:var(--mut);line-height:2">بلا استمارة وبلا تعقيد: دخلي لواتساب، صيفطي ميساج واحد، وكنأكدو معاك الموعد وكنصيفطو لك العنوان تمّا.</p>
+        <a class="btn btn-wa" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86" target="_blank" rel="noopener" style="justify-content:center;font-size:18px;padding:17px;margin-top:16px;width:100%">دخلي لواتساب دابا ←</a>
+        <p class="micro" style="text-align:center;margin-top:12px">الرد في أوقات العمل: 10:00–13:00 · 15:00–19:30</p>
+      </div>
       <div class="info-card rv">
         <h3>معلومات التواصل</h3>
         <div class="row"><b>الهاتف / واتساب</b><span dir="ltr">0609 238 630</span></div>
@@ -660,7 +648,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 <footer>
   <div class="wrap foot">
     <div>
-      <div class="logo"><span>LABO</span> <b style="color:var(--vio2)">AHLAM</b> 🦷</div>
+      <div class="logo"><span>LABO</span> <b>AHLAM</b> <img class="logo-mark" src="labo/logo-mark.png" alt="شعار Labo Ahlam"></div>
       <p class="mut">مختبر أحلام مغري زرهوني لتركيبات الأسنان<br>Prothèses dentaires — fait avec précision au Maroc.</p>
     </div>
     <div class="mut">
@@ -673,7 +661,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
       <b style="color:#fff">الخدمات</b><br>تركيبة كاملة · مرنة سيليكون · كلاسيكية<br>Snap-on Smile · Gouttière · Strass · Couronnes
     </div>
   </div>
-  <div class="wrap" style="margin-top:28px"><p class="micro">© Labo Ahlam — Demo conçu par VERTEX WEB · vertex-web-tanger.onrender.com</p></div>
+  <div class="wrap" style="margin-top:28px"><p class="micro">© Labo Ahlam · موقع من تصميم VERTEX WEB — vertex-web-tanger.onrender.com</p></div>
 </footer>
 
 <a id="wa-pill" data-i="pill" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1" target="_blank" rel="noopener">💬 واتساب المختبر</a>
@@ -733,14 +721,6 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
   });
   /* FAQ */
   document.querySelectorAll('.faq-it button').forEach(function(b){b.addEventListener('click',function(){var it=b.parentElement,was=it.classList.contains('open');document.querySelectorAll('.faq-it.open').forEach(function(o){o.classList.remove('open');o.querySelector('.pl').textContent='+';});if(!was){it.classList.add('open');b.querySelector('.pl').textContent='−';}});});
-  /* BOOKING -> WhatsApp */
-  document.getElementById('bookForm').addEventListener('submit',function(e){
-    e.preventDefault();
-    var v=function(id){return document.getElementById(id).value.trim();};
-    var lines=['السلام، بغيت نحجز عند Labo Ahlam','الاسم: '+(v('fName')||'—'),'الهاتف: '+(v('fPhone')||'—'),'الخدمة: '+v('fSvc'),'المدينة: '+(v('fCity')||'—')];
-    if(v('fMsg'))lines.push('رسالة: '+v('fMsg'));
-    window.open('https://wa.me/212609238630?text='+encodeURIComponent(lines.join('\n')),'_blank');
-  });
 })();
 </script>
 
@@ -776,7 +756,7 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     cta1:'Réserver sur WhatsApp',cta2:'Voir les services',
     st1:'abonnées sur Instagram',st2:'publications & vidéos',st3:'services spécialisés',
     svcT:'Que fabriquons-nous au laboratoire ?',galT:'Le travail… en images 3D',procT:'Comment ça se passe ?',
-    reelT:'Sur son Instagram — ses explications',faqT:'Les questions qui reviennent souvent',rdvT:'Réservez en une minute — sans complication',
+    reelT:'Sur son Instagram — ses explications',faqT:'Les questions qui reviennent souvent',rdvT:'Contactez-nous sur WhatsApp — en direct',
     pill:'💬 WhatsApp du labo'
   };
   var btn=document.getElementById('langBtn'),fr=false;
