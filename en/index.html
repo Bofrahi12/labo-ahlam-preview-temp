@@ -794,5 +794,17 @@ document.querySelectorAll('[data-ba]').forEach(function(box){
   });
 })();
 </script>
+<script>
+(function(){
+ var L=document.getElementById('loader'), F=document.getElementById('loadFill');
+ if(!L) return;
+ var p=0, iv=setInterval(function(){ p=Math.min(92, p+Math.random()*16); if(F) F.style.width=p+'%'; },180);
+ var fired=false;
+ function go(){ if(fired) return; fired=true; clearInterval(iv); if(F) F.style.width='100%';
+   setTimeout(function(){ L.classList.add('done'); setTimeout(function(){ L.style.display='none'; },760); },160); }
+ window.addEventListener('load', function(){ setTimeout(go, 350); });
+ setTimeout(go, 2600);
+})();
+</script>
 </body>
 </html>
