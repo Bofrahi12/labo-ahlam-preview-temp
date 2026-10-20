@@ -100,6 +100,7 @@ section{padding:92px 0;position:relative}
 /* 3D GALLERY */
 .gal-hint{color:var(--mut);font-size:14px;margin-top:6px}
 #gal3d{margin-top:34px;perspective:1400px}
+#gal3dB{margin-top:34px;perspective:1400px}
 .gal-track{display:flex;gap:18px;overflow-x:auto;padding:26px 6px 30px;scroll-snap-type:x mandatory;scrollbar-width:none}
 .gal-track::-webkit-scrollbar{display:none}
 .gcard{flex:0 0 min(74vw,430px);scroll-snap-align:center;border-radius:20px;overflow:hidden;position:relative;border:1px solid var(--line);transform-style:preserve-3d;will-change:transform;background:#000}
@@ -175,7 +176,6 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 #cursor.big{width:58px;height:58px;background:rgba(47,128,237,.16)}
 #film{background:#08060f;overflow:hidden}
 .film-pin{height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:70px 18px 30px}
-#filmCanvas{width:min(1060px,94vw);aspect-ratio:16/9;border-radius:20px;border:1px solid var(--line);box-shadow:0 40px 90px rgba(0,0,0,.55);background:#000}
 .film-caps{position:relative;height:64px;width:min(860px,92vw);text-align:center}
 .film-cap{position:absolute;inset:0;opacity:0;transition:opacity .5s;font-size:clamp(19px,3vw,27px);font-weight:900;line-height:1.6}
 .film-cap.on{opacity:1}
@@ -439,17 +439,18 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
 <div class="stars-wall" dir="ltr"><div class="stars-track"><figure class="star-card" data-celeb="1"><video src="labo/celeb-video.mp4" poster="labo/celeb-after.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="برينسيسا الطنجاوية — فيديو محسّن عند Labo Ahlam"></video><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card"><img src="labo/resultat-sourire.jpg" alt="مشهور على إنستغرام — نتيجة حقيقية عند Labo Ahlam" loading="lazy" style="object-position:center 25%"><figcaption><b>نجوم زارونا</b><span>مشهور على إنستغرام</span></figcaption></figure><figure class="star-card"><video src="labo/ig-star-video.mp4" poster="labo/ig-star.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — فيديو من زيارتو</span></figcaption></figure><figure class="star-card"><video src="labo/ig-fit-video.mp4" poster="labo/ig-fit.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — أثناء التركيب</span></figcaption></figure><figure class="star-card"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/celeb-video.mp4" poster="labo/celeb-after.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="برينسيسا الطنجاوية — فيديو محسّن عند Labo Ahlam"></video><figcaption><b>برينسيسا الطنجاوية</b><span>Snap-on Smile</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/celeb3-video.mp4" poster="labo/celeb3.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>من إنستغرام</b><span>التحوّل الكامل — في الفيديو</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/resultat-sourire.jpg" alt="مشهور على إنستغرام — نتيجة حقيقية عند Labo Ahlam" loading="lazy" style="object-position:center 25%"><figcaption><b>نجوم زارونا</b><span>مشهور على إنستغرام</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/ig-star-video.mp4" poster="labo/ig-star.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — فيديو من زيارتو</span></figcaption></figure><figure class="star-card" aria-hidden="true"><video src="labo/ig-fit-video.mp4" poster="labo/ig-fit.jpg" autoplay muted loop playsinline preload="metadata"></video><figcaption><b>نجوم زارونا</b><span>مشهور إنستغرام — أثناء التركيب</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/visite-chanteur.jpg" alt="في المختبر — Labo Ahlam" loading="lazy"><figcaption><b>في المختبر</b><span>زيارة مغني مشهور</span></figcaption></figure><figure class="star-card" aria-hidden="true"><img src="labo/celeb-before.jpg" alt="برينسيسا — Labo Ahlam" loading="lazy"><figcaption><b>برينسيسا</b><span>قبل ما تبدا رحلتها</span></figcaption></figure></div></div>
   </div>
 </section>
-<section id="film">
-  <div class="film-pin" id="filmPin">
-    <div class="eyebrow">Le film · جولة في المختبر</div>
-    <canvas id="filmCanvas" width="1280" height="720"></canvas>
-    <div class="film-caps">
-      <div class="film-cap on" data-cap="0"><span>SCÈNE 01</span>المختبر — هنا كتصايب الابتسامة</div>
-      <div class="film-cap" data-cap="1"><span>SCÈNE 02</span>القوالب والمقاسات — الدقة قبل كلشي</div>
-      <div class="film-cap" data-cap="2"><span>SCÈNE 03</span>النتيجة — تركيبة واجدة، طبيعية ومريحة</div>
-    </div>
-    <p class="micro">كملي النزول — الفيلم كيتحرك معاك</p>
+<section id="photos3d">
+  <div class="wrap">
+    <div class="eyebrow">Galerie 3D · من قلب المختبر</div>
+    <h2 class="title rv">صور حقيقية… بعرض ثلاثي الأبعاد</h2>
+    <p class="gal-hint rv">جرّي الصور بجنب، وشدّي الصورة اللي في الوسط ودوّريها بصبعك — بحال كتمسّي الابتسامة بيدك.</p>
   </div>
+  <div id="gal3dB"><div class="gal-track" id="galTrackB">
+    <figure class="gcard"><img src="labo/celeb3.jpg" alt="نتيجة حقيقية — ابتسامة زبون عند Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>نتيجة حقيقية — ابتسامة زبون</figcaption></figure>
+    <figure class="gcard"><img src="labo/celeb-after.jpg" alt="برينسيسا الطنجاوية بعد Snap-on Smile عند Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>برينسيسا الطنجاوية — بعد Snap-on Smile</figcaption></figure>
+    <figure class="gcard"><img src="labo/ig-fit.jpg" alt="أثناء تركيب التركيبة في مختبر Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>أثناء التركيب — في المختبر</figcaption></figure>
+    <figure class="gcard"><img src="labo/resultat-sourire.jpg" alt="نتيجة حقيقية — تفاصيل ابتسامة زبون عند Labo Ahlam" loading="lazy"><div class="glare"></div><figcaption>نتيجة حقيقية — تفاصيل الابتسامة</figcaption></figure>
+  </div></div>
 </section>
 <section id="services">
   <div class="wrap">
@@ -743,18 +744,6 @@ footer .mut{color:var(--mut);font-size:14px;line-height:2}
     document.addEventListener('pointermove',function(e){cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';});
     document.querySelectorAll('a,button,.gcard,.tilt').forEach(function(el){el.addEventListener('pointerenter',function(){cur.classList.add('big');});el.addEventListener('pointerleave',function(){cur.classList.remove('big');});});
   }
-  /* SCROLL FILM — canvas frame sequence, reversible */
-  var cv=document.getElementById('filmCanvas');
-  if(cv&&window.gsap&&window.ScrollTrigger){
-    gsap.registerPlugin(ScrollTrigger);if(window.__lenis){window.__lenis.on('scroll',ScrollTrigger.update);}window.addEventListener('load',function(){setTimeout(function(){ScrollTrigger.refresh();},400);});
-    var ctx=cv.getContext('2d'),N=60,frames=[],loaded=0,state={f:0};
-    for(var i=0;i<N;i++){var im=new Image();im.src='labo/film/f'+String(i).padStart(3,'0')+'.webp';im.onload=function(){loaded++;if(loaded===1)draw(0);};frames.push(im);}
-    function draw(f){var img=frames[Math.max(0,Math.min(N-1,Math.round(f)))];if(img&&img.complete&&img.naturalWidth)ctx.drawImage(img,0,0,1280,720);}
-    var caps=document.querySelectorAll('.film-cap');
-    gsap.to(state,{f:N-1,ease:'none',
-      scrollTrigger:{trigger:'#filmPin',start:'top top',end:'+=160%',pin:true,scrub:0.6},
-      onUpdate:function(){draw(state.f);var seg=state.f<20?0:(state.f<40?1:2);caps.forEach(function(c){c.classList.toggle('on',+c.dataset.cap===seg);});}});
-  }
   /* FR TOGGLE */
   var FR={
     nav1:'Services',nav2:'Galerie 3D',nav3:'Le parcours',nav4:'Instagram',nav5:'Questions',nav6:'Rendez-vous',
@@ -784,6 +773,34 @@ document.querySelectorAll('[data-ba]').forEach(function(box){
   function upd(){var v=+inp.value; after.style.clipPath='inset(0 0 0 '+v+'%)'; line.style.left=v+'%';}
   inp.addEventListener('input', upd); upd();
 });
+</script>
+<script>
+(function(){
+  var track=document.getElementById('galTrackB');if(!track)return;
+  var cards=[].slice.call(track.children);
+  function upd(){
+    var tr=track.getBoundingClientRect(),mid=tr.left+tr.width/2;
+    cards.forEach(function(c){
+      var r=c.getBoundingClientRect(),cx=r.left+r.width/2,d=(cx-mid)/(tr.width/2),ad=Math.min(Math.abs(d),1);
+      var isC=Math.abs(d)<0.28;c.classList.toggle('is-center',isC);
+      if(c.dataset.grabbed==='1')return;
+      c.style.transform='rotateY('+(d*-22)+'deg) scale('+(1-ad*0.10)+')';
+      c.style.opacity=String(1-ad*0.35);
+      c.style.touchAction=isC?'none':'';
+    });
+  }
+  track.addEventListener('scroll',function(){requestAnimationFrame(upd);},{passive:true});
+  window.addEventListener('resize',upd);upd();
+  cards.forEach(function(c){
+    var sx=0,sy=0,drag=false,moved=false;
+    c.addEventListener('pointerdown',function(e){if(!c.classList.contains('is-center'))return;sx=e.clientX;sy=e.clientY;drag=true;moved=false;c.dataset.grabbed='1';c.setPointerCapture(e.pointerId);});
+    c.addEventListener('pointermove',function(e){if(!drag)return;var dx=e.clientX-sx,dy=e.clientY-sy;if(Math.abs(dx)+Math.abs(dy)>6)moved=true;var ry=Math.max(-34,Math.min(34,dx/6)),rx=Math.max(-24,Math.min(24,-dy/6));c.style.transform='rotateX('+rx+'deg) rotateY('+ry+'deg) scale(1.02)';c.style.setProperty('--gx',(50+dx/4)+'%');c.style.setProperty('--gy',(50+dy/4)+'%');});
+    function end(e){if(!drag)return;drag=false;delete c.dataset.grabbed;c.style.transform='';upd();if(moved){var kill=function(ev){ev.stopPropagation();ev.preventDefault();c.removeEventListener('click',kill,true);};c.addEventListener('click',kill,true);setTimeout(function(){c.removeEventListener('click',kill,true);},350);}}
+    c.addEventListener('pointerup',end);c.addEventListener('pointercancel',end);
+    c.addEventListener('click',function(){if(!c.classList.contains('is-center')){c.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});}});
+    c.addEventListener('contextmenu',function(e){e.preventDefault();});
+  });
+})();
 </script>
 </body>
 </html>
