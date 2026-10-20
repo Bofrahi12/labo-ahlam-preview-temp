@@ -402,7 +402,7 @@ section .wrap{position:relative;z-index:1}
 <style>.tilt video.main{width:100%;height:520px;object-fit:cover;border-radius:22px;border:1px solid var(--line);box-shadow:0 40px 80px rgba(0,0,0,.5);display:block;background:#04101f}@media(max-width:760px){.tilt video.main{height:400px}}.tilt .chip.c0{top:14px;inset-inline-start:14px;background:linear-gradient(120deg,#0e5aa8,#19b3e6);color:#fff;border:none;font-weight:800}.tilt-scene{position:relative}.tilt-scene::before{content:"";position:absolute;inset:-8% -4%;background:radial-gradient(closest-side,rgba(25,179,230,.28),transparent 70%);filter:blur(18px);z-index:-1}</style>
 <style>.svc .ph.ph-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%,#123a5f,#081c30);min-height:170px}.svc .ph.ph-art svg{width:92px;height:92px;filter:drop-shadow(0 10px 24px rgba(47,128,237,.45))}.svc-hero-art{display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%,#123a5f,#081c30);border-radius:18px;min-height:240px}.svc-hero-art svg{width:130px;height:130px;filter:drop-shadow(0 14px 30px rgba(47,128,237,.45))}</style>
 <style>.stars-wall{overflow:hidden;margin-top:34px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}.stars-track{display:flex;gap:16px;width:max-content;animation:starsScroll 32s linear infinite}.stars-wall:hover .stars-track{animation-play-state:paused}@keyframes starsScroll{to{transform:translateX(-50%)}}.star-card{margin:0;width:228px;flex:0 0 auto;border-radius:18px;overflow:hidden;background:var(--panel);border:1px solid var(--line);box-shadow:0 18px 40px rgba(0,0,0,.35)}.star-card img,.star-card video{width:100%;height:288px;object-fit:cover;display:block}.star-card figcaption{padding:12px 14px;text-align:right}.star-card figcaption b{display:block;font-size:16px}.star-card figcaption span{color:var(--mut);font-size:13px}@media (prefers-reduced-motion: reduce){.stars-track{animation:none}}</style>
-</head>
+<link rel="canonical" href="https://laboahlam.com/index.html"><link rel="alternate" hreflang="ar" href="https://laboahlam.com/index.html"><link rel="alternate" hreflang="fr" href="https://laboahlam.com/fr/index.html"><link rel="alternate" hreflang="en" href="https://laboahlam.com/en/index.html"><link rel="alternate" hreflang="x-default" href="https://laboahlam.com/index.html"></head>
 <body>
 <div id="loader"><div class="lg"><span style="font-family:'Marcellus',serif">LABO</span> <b>AHLAM</b> <img class="logo-mark" src="labo/logo-mark.png" alt="شعار Labo Ahlam"></div><div class="bar2"><i id="loadFill"></i></div><div class="micro">كنوجدو لك الابتسامة…</div></div>
 <div id="grain"></div><div id="cursor"></div>
@@ -415,7 +415,7 @@ section .wrap{position:relative;z-index:1}
 <a href="#stars">المشاهير</a>
 <a href="espace-dentistes.html">للأطباء</a><a href="#galerie" data-i="nav2">المعرض</a><a href="#process" data-i="nav3">كيفاش كنخدمو</a><a href="#reels" data-i="nav4">من إنستغرام</a><a href="#faq" data-i="nav5">أسئلة</a><a href="#rdv" data-i="nav6">الحجز</a>
     </nav>
-    <button id="langBtn" type="button">FR</button>
+    <div class="lang-sw"><a class="on" href="ar/index.html">عربي</a><a href="fr/index.html">FR</a><a href="en/index.html">EN</a></div><style>.lang-sw{display:inline-flex;gap:6px;align-items:center}.lang-sw a{border:1px solid #3d6a96;color:#a9c6de;border-radius:999px;padding:7px 13px;font-weight:800;font-size:13px;text-decoration:none}.lang-sw a.on{background:#2f80ed;color:#fff;border-color:#2f80ed}</style>
     <a class="btn btn-wa" href="https://wa.me/212609238630?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%84%D9%89%20%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86" target="_blank" rel="noopener">واتساب</a>
   </div>
 </header>
@@ -756,41 +756,7 @@ section .wrap{position:relative;z-index:1}
 })();
 </script>
 
-<script>
-(function(){
-  /* PRELOADER */
-  var loader=document.getElementById('loader'),fill=document.getElementById('loadFill'),pr=0;
-  var iv=setInterval(function(){pr=Math.min(pr+Math.random()*22,92);fill.style.width=pr+'%';},160);
-  window.addEventListener('load',function(){clearInterval(iv);fill.style.width='100%';setTimeout(function(){loader.classList.add('done');},350);});
-  setTimeout(function(){loader.classList.add('done');},3800);
-  /* CURSOR */
-  var cur=document.getElementById('cursor');
-  if(cur&&window.matchMedia('(hover:hover) and (pointer:fine)').matches){
-    document.addEventListener('pointermove',function(e){cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';});
-    document.querySelectorAll('a,button,.gcard,.tilt').forEach(function(el){el.addEventListener('pointerenter',function(){cur.classList.add('big');});el.addEventListener('pointerleave',function(){cur.classList.remove('big');});});
-  }
-  /* FR TOGGLE */
-  var FR={
-    nav1:'Services',nav2:'Galerie 3D',nav3:'Le parcours',nav4:'Instagram',nav5:'Questions',nav6:'Rendez-vous',
-    h1:'Un sourire <em>façonné avec précision</em>…<br>au rendu naturel',
-    cta1:'Réserver sur WhatsApp',cta2:'Voir les services',
-    st1:'abonnées sur Instagram',st2:'publications & vidéos',st3:'services spécialisés',
-    svcT:'Que fabriquons-nous au laboratoire ?',galT:'Le travail… en images 3D',procT:'Comment ça se passe ?',
-    reelT:'Sur son Instagram — ses explications',faqT:'Les questions qui reviennent souvent',rdvT:'Contactez-nous sur WhatsApp — en direct',
-    pill:'💬 WhatsApp du labo'
-  };
-  var btn=document.getElementById('langBtn'),fr=false;
-  btn.addEventListener('click',function(){
-    fr=!fr;var html=document.documentElement;
-    document.querySelectorAll('[data-i]').forEach(function(el){
-      var k=el.dataset.i;if(!FR[k])return;
-      if(fr){if(el.dataset.ar===undefined)el.dataset.ar=el.innerHTML;el.innerHTML=FR[k];}
-      else if(el.dataset.ar!==undefined){el.innerHTML=el.dataset.ar;}
-    });
-    html.lang=fr?'fr':'ar';html.dir=fr?'ltr':'rtl';btn.textContent=fr?'عربي':'FR';
-  });
-})();
-</script>
+
   
 <script>
 document.querySelectorAll('[data-ba]').forEach(function(box){
